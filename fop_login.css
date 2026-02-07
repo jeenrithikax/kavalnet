@@ -1,0 +1,65 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+body { background:#f4f6f9; min-height:100vh; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header-box { 
+    background:#1e6091; 
+    color:white; 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    padding:15px 30px; 
+    border-bottom-left-radius:20px; 
+    border-bottom-right-radius:20px; 
+    position: relative; 
+    z-index: 10; 
+}
+.header-center { text-align:center; flex:1; }
+.header-center h1 { font-size:24px; margin-top:5px; }
+.logo { width:80px; height:auto; display:block; margin:0 auto; }
+
+/* HOME BUTTON */
+.home-btn { 
+    color:white; 
+    text-decoration:none; 
+    background:#144e75; 
+    padding:8px 16px; 
+    border-radius:10px; 
+    font-weight:bold; 
+    z-index: 20; 
+}
+.home-btn:hover { 
+    background:#0a3d62; 
+}
+
+/* LOGIN CONTAINER */
+.login-container { background:#fff; width:360px; margin:50px auto; padding:30px; border-radius:20px; box-shadow:0 12px 30px rgba(0,0,0,0.15); text-align:center; }
+.login-container h2 { margin-bottom:20px; color:#0a3d62; }
+.login-container input { width:100%; padding:12px; margin-bottom:15px; border-radius:10px; border:1px solid #ccc; font-size:15px; }
+.login-container input:focus { outline:none; border-color:#1e6091; }
+.login-container button { width:100%; padding:12px; background:#1e6091; color:white; border:none; border-radius:12px; font-size:16px; font-weight:bold; cursor:pointer; transition:0.3s; }
+.login-container button:hover { background:#144e75; }
+
+/* ERROR */
+.error { background:#ffdddd; color:#b30000; padding:10px; margin-bottom:15px; border-radius:8px; font-size:14px; }
+
+/* WELCOME TEXT */
+.welcome-text { text-align:center; margin-top:20px; font-size:18px; font-weight:500; color:#0a3d62; }
+.error-msg {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}

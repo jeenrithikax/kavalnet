@@ -1,0 +1,176 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* BODY */
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+/* HEADER */
+.header{
+    width:100%;
+    background:#002b5c;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header .logo{
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.header .home-btn{
+    background:white;
+    color:#002b5c;
+    padding:8px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.header .home-btn:hover{
+    background:#e0e0e0;
+}
+
+/* MAIN CONTAINER */
+.container{
+    max-width:900px;
+    background:white;
+    margin:30px auto;
+    padding:25px 30px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.container h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#002b5c;
+}
+
+/* SECTION TITLES */
+h3{
+    margin:25px 0 10px;
+    color:#002b5c;
+    border-bottom:2px solid #eee;
+    padding-bottom:5px;
+}
+
+/* LABELS */
+label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea{
+    width:100%;
+    padding:10px 12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+}
+
+textarea{
+    resize:vertical;
+    min-height:80px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#002b5c;
+}
+
+/* MAP */
+#map{
+    width:100%;
+    height:300px;
+    margin-top:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* FILE INPUT */
+input[type="file"]{
+    margin-top:8px;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    background:#002b5c;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#014a9b;
+}
+
+/* SUCCESS / ERROR */
+.success{
+    margin-top:15px;
+    padding:12px;
+    background:#d4edda;
+    color:#155724;
+    border-radius:6px;
+    text-align:center;
+    font-weight:600;
+}
+
+.error{
+    margin-top:15px;
+    padding:12px;
+    background:#f8d7da;
+    color:#721c24;
+    border-radius:6px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
